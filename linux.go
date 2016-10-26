@@ -24,7 +24,7 @@ func notify(title, message string, timeout time.Duration) error {
 	args[0] = title
 	args[1] = message
 
-	if ms := int(timeout.Nanoseconds()) / 1e6; ms >= 1 {
+	if ms := int(timeout.Nanoseconds()) / 1e6; ms > 0 {
 		args = append(args, "-t")
 		args = append(args, strconv.Itoa(ms))
 	}

@@ -4,6 +4,7 @@ package gnotifier
 
 import (
 	"os/exec"
+	"strconv"
 	"time"
 )
 
@@ -19,5 +20,14 @@ func notify(title, message string, timeout time.Duration) error {
 		return pathErr
 	}
 
-	return exec.Command(path, title, message).Run()
+	args := make([]string, 2, 4)
+	args[0] = title
+	args[1] = message
+
+	if ms := int(timeout.Nanoseconds()) / 1e6; ms >= 1 {
+		args = append(args, "-t")
+		args = append(args, strconv.Itoa(ms))
+	}
+
+	return exec.Command(path, args...).Run()
 }

@@ -1,3 +1,6 @@
 [submodule "vendor/github.com/everdev/mack"]
 	path = vendor/github.com/everdev/mack
 	url = https://github.com/everdev/mack
+[submodule "vendor/github.com/deckarep/gosx-notifier"]
+	path = vendor/github.com/deckarep/gosx-notifier
+	url = https://github.com/deckarep/gosx-notifier

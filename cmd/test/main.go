@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	err := gnotifier.Notify("hey", "you", time.Second*5)
+	err := gnotifier.Notify("test", "hey", "you", time.Second*5, "./icon.png")
 	panic(err)
 }

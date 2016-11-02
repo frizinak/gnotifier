@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/deckarep/gosx-notifier"
 	"github.com/everdev/mack"
+	"github.com/frizinak/gosx-notifier"
 )
 
 func notify(app, title, message string, timeout time.Duration, image string) error {

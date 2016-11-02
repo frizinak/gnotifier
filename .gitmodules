@@ -4,3 +4,9 @@
 [submodule "vendor/github.com/frizinak/gosx-notifier"]
 	path = vendor/github.com/frizinak/gosx-notifier
 	url = https://github.com/frizinak/gosx-notifier
+[submodule "vendor/github.com/go-toast/toast"]
+	path = vendor/github.com/go-toast/toast
+	url = https://github.com/go-toast/toast
+[submodule "vendor/github.com/nu7hatch/gouuid"]
+	path = vendor/github.com/nu7hatch/gouuid
+	url = https://github.com/nu7hatch/gouuid
